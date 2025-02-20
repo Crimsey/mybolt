@@ -31,8 +31,6 @@ services:
             - target: 443
               published: ${HTTP3_PORT:-443}
               protocol: udp
-        networks:
-            - rabbitmq_net
     
     rabbitmq-node-1:
         image: rabbitmq:3.12-management
